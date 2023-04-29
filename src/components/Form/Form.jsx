@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../Button";
 
-const Form = ({ todoList, todoText, setTodoText, setTodoList }) => {
+const Form = ({ todoText, setTodoText , todoList, setTodoList}) => {
   const submitHandler = (e) => {
     e.preventDefault();
     setTodoList(

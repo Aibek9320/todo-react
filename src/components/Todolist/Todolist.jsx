@@ -1,23 +1,15 @@
 import React from "react";
-import Button from "../Button";
+import Todo from "../Todo/Todo";
 
-const Todolist = ({todoList}) => {
+const Todolist = ({todoList, setTodoList }) => {
   return (
     <ul>
       {todoList &&
         todoList.map((todo) => (
-          <li key={todo.id}>
-            <div className="time">{todo.time}</div>
-            <input type="text" readOnly value={todo.todoText} />
-            <div>
-            <Button >выполнено</Button>
-            <Button>изменить</Button>
-            <Button>удалить</Button>
-            </div>
-          </li>
+          <Todo key={todo.id} todo={todo} setTodoList={setTodoList}/>
         ))}
-    </ul>
-  );
-};
+    </ul> 
+  )
+}
 
 export default Todolist;

@@ -1,4 +1,4 @@
-*{
+/* *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -16,5 +16,5 @@
     transform: translate(-50%, -50%);
     padding: 10px;
     border-radius: 5px;
-    /* width: 100%; */
-}
+    
+} */
